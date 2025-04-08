@@ -3,7 +3,7 @@ import numpy as np
 from diffractsim.util.constants import *
 
 
-def plot_moire_longitudinal_profile_intensity(self,  longitudinal_profile_E, extent,  square_root = False, grid = False, xlim=None, ylim=None, units = mm,  z_units = mm, dark_background = False, i = 0, lens_2_z_pos = 1*mm, theta = 0):
+def plot_moire_longitudinal_profile_intensity(self,  longitudinal_profile_E, extent,  square_root = False, grid = False, xlim=None, ylim=None, units = mm,  z_units = mm, dark_background = False, lens_2_z_pos = 1*mm, theta = 0):
     """visualize the diffraction pattern longitudinal profile intensity with matplotlib"""
 
     from diffractsim.util.backend_functions import backend as bd
@@ -97,5 +97,5 @@ def plot_moire_longitudinal_profile_intensity(self,  longitudinal_profile_E, ext
     # rotatio degree
     plt.text(float(extent[3]) / units - 5, -lens_radius +0.06, 'θ = '+str(int(theta))+"°", fontsize=12, color='white')
 
-    plt.savefig('/Users/ericagostinho/Desktop/personal/moire/foo'+str(i)+'.png')
+    plt.show()
     
